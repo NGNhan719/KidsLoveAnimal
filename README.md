@@ -1,7 +1,7 @@
 # KidsLoveAnimal
 
-<hr/>
 A clone KidsLoveAnimal app to show image and hear sound of animals for children.
+
 
 
 
