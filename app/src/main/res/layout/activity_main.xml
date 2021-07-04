@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <com.project.kidsloveanimal.CustomImageView
+        android:id="@+id/bkg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="matrix" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/textSwitcherShadowTop"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginTop="@dimen/main_portable_top_margin"
+            android:background="@drawable/drop_shadow_top"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/mainBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <com.project.kidsloveanimal.RecyclingImageView
+                android:id="@+id/title"
+                android:layout_width="@dimen/main_title_size"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/button_flag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/main_flag_button_size"
+                        android:background="@drawable/transparent_button"
+                        android:contentDescription="@null"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/gb" />
+
+                    <TextView
+                        android:id="@+id/text_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/language"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/button_menu"
+                    android:layout_width="@dimen/main_tools_big_button_size"
+                    android:layout_height="@dimen/main_tools_big_button_size"
+                    android:background="@drawable/main_button_settings"
+                    android:contentDescription="@null"
+                    android:padding="5dp" />
+
+                <ToggleButton
+                    android:id="@+id/mute"
+                    android:layout_width="@dimen/main_tools_big_button_size"
+                    android:layout_height="@dimen/main_tools_big_button_size"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/main_button_mute"
+                    android:padding="5dp"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/textSwitcherShadowBottom"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@drawable/drop_shadow"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/images_top_margin_menu"
+            android:layout_marginBottom="15dp">
+
+            <ImageButton
+                android:id="@+id/button_zwierzeta"
+                android:layout_width="@dimen/main_play_button_size"
+                android:layout_height="@dimen/main_play_button_size"
+                android:background="@drawable/main_button_play"
+                android:contentDescription="@null" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/button_random"
+                android:layout_width="@dimen/main_tools_small_button_size"
+                android:layout_height="@dimen/main_tools_small_button_size"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/main_button_random"
+                android:textOff=""
+                android:textOn="" />
+
+            <ImageButton
+                android:id="@+id/button_category"
+                android:layout_width="@dimen/main_group_button_size"
+                android:layout_height="@dimen/main_group_button_size"
+                android:background="@drawable/main_button_group"
+                android:contentDescription="@null" />
+
+            <ImageButton
+                android:id="@+id/button_like"
+                android:layout_width="@dimen/main_tools_small_button_size"
+                android:layout_height="@dimen/main_tools_small_button_size"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/button_main_like"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/volume_control_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSwitcherShadowBottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_white_bkg"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <include layout="@layout/volume_control" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/share_button" />
+</RelativeLayout>

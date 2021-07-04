@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="thickness_button_border">1dp</dimen>
+    <dimen name="main_portable_top_margin">30dp</dimen>
+    <dimen name="main_flag_button_size">30dp</dimen>
+    <dimen name="main_tools_big_button_size">55dp</dimen>
+    <dimen name="images_top_margin_menu">10dp</dimen>
+    <dimen name="main_play_button_size">150dp</dimen>
+    <dimen name="main_tools_small_button_size"></dimen>
+    <dimen name="main_group_button_size">52dp</dimen>
+    <dimen name="main_title_size">300dp</dimen>
+    <dimen name="images_button_close_webview_size">40dp</dimen>
+    <dimen name="gallery_arrow_top_and_button_arrows_sum">75dp</dimen>
+    <dimen name="images_button_on_topbar_size">30dp</dimen>
+    <dimen name="images_button_bellow_topbar_size">30dp</dimen>
+    <dimen name="button_mute_size">30dp</dimen>
+    <dimen name="images_tools_button_size">50dp</dimen>
+    <dimen name="bottom_gallery_layout_weight">0.91</dimen>
+    <dimen name="gallery_arrow_top_width">25dp</dimen>
+    <dimen name="gallery_arrow_top_height">12dp</dimen>
+    <dimen name="images_arrow_button_size">60dp</dimen>
+</resources>

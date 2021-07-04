@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="selectableItemStyle">
+        <item name="android:background">@drawable/selectable_list_item</item>
+        <item name="android:selectable">true</item>
+    </style>
+    <style name="holoLightStyle">
+        <item name="android:background">@android:color/background_light</item>
+    </style>
+</resources>
