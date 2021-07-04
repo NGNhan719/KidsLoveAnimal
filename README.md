@@ -1,6 +1,6 @@
 # KidsLoveAnimal
 
-A clone KidsLoveAnimal app to show image and hear sound of animals for children.
+A clone KidsLoveAnimal app to show images and hear sound of animals for children.
 
 
 
